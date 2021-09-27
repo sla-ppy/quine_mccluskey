@@ -14,15 +14,12 @@ void binConv(int number) {
     // 4. do until no more division
 
     int count{0};
-    int vecSize{0};
-    std::vector<vecSize, char>;
 
     while(converted != 1) {
         converted = cache;
         std::cout << converted % 2;
         cache = converted / 2;
         count++;
-        vecSize = count;
     }
 
     std::cout << '\n';

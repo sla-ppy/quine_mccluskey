@@ -4,7 +4,8 @@
 
 // ROADMAP:
 // 1. represent char by bit
-// 2. take in array of inputs,
+// 2. take in array of inputs
+// ok
 
 int main() {
 
