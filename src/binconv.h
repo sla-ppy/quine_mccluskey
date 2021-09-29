@@ -2,30 +2,18 @@
 #define BINCONV_H
 
 #include <iostream>
-#include <vector>
 
-void binConv(int number) {
-    int converted = number;
+std::string binConv(int number) {
+    std::string result;
+
     int cache = number;
 
-    // 1. output modulo
-    // 2. divide by 2
-    // 3. save the result in a var
-    // 4. do until no more division
-
-    int count{0};
-
-    while(converted != 1) {
-        converted = cache;
-        std::cout << converted % 2;
-        cache = converted / 2;
-        count++;
+    while (cache != 0 && cache != 1) {
+        cache / 2;
     }
 
-    std::cout << '\n';
-    std::cout << "Amount of characters to save in char[]: " << count << '\n';
-
-
+    result = std::to_string(cache % 2);
+    return result;
 };
 
 #endif // BINCONV_H

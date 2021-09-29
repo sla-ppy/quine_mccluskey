@@ -9,17 +9,9 @@
 
 int main() {
 
-
-    // dec value represented in ascii: 48 - 57
-    char c{48};
-    char d{57};
-    // std::cout << c;
-    // std::cout << d;
-
-
-    // yes this is not very smart but might come handy sometime? probably not, but i uploaded it this way.
-    int convInput{9};
-    binConv(convInput);
+    for (int i = 0; i < 16; ++i) {
+        std:: cout << binConv(i) << '\n';
+    }
 
     return 0;
 }
