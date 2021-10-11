@@ -5,14 +5,24 @@
 
 std::string binConv(int number) {
     std::string result;
-
-    int cache = number;
-
-    while (cache != 0 && cache != 1) {
-        cache / 2;
+    // int cache = number;
+    if (number == 0) {
+        result = std::to_string(number);
+        return result;
     }
 
-    result = std::to_string(cache % 2);
+    while (number > 0) {
+        if (number % 2 == 1) {
+            result += '1';
+        }
+        if (number % 2 == 0) {
+            result += '0';
+        }
+
+        number = number / 2;
+    }
+
+    std::reverse(result.begin(), result.end());
     return result;
 };
 
