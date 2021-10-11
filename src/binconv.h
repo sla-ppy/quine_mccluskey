@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+// This is basically a fake convert to binary that we just utilize
+// Other methods include:
 std::string binConv(int number) {
     std::string result;
     // int cache = number;
