@@ -7,12 +7,14 @@
 // Other methods include:
 std::string binConv(int number) {
     std::string result;
-    // int cache = number;
+
+    // if first element is 0, return 0
     if (number == 0) {
         result = std::to_string(number);
         return result;
     }
 
+    // assign ones and zeroes until we can divide
     while (number > 0) {
         if (number % 2 == 1) {
             result += '1';
@@ -24,6 +26,7 @@ std::string binConv(int number) {
         number = number / 2;
     }
 
+    // very important to reverse the end results!!!
     std::reverse(result.begin(), result.end());
     return result;
 };
